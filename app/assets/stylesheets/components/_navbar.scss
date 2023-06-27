@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  border: solid 0.5px #dddcdc;
+}
+
+.navbar-brand {
+  color: #777;
+  font-size: 18px;
+  text-decoration: none;
+  padding-left: 15px;
+
+  &:hover {
+    color: rgb(182, 79, 79);
+  }
+}
+
+.navbar a {
+  text-decoration: none !important;
+  color: #777 !important;
+  padding-right: 15px;
+}
