@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="centered-div">
+    <div class="title">
+      <h1><%= @article.title %></h1>
+      <%= link_to '<i class="fa-solid fa-pencil"></i>'.html_safe, edit_article_path(@article) %>
+      <%= link_to '<i class="fa-regular fa-trash-can"></i>'.html_safe, article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Do you really want to delete this article?"} %>
+    </div>
+    <p><%= @article.content %></p>
+  </div>
+</div>
